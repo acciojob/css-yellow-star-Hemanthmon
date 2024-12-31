@@ -1,1 +1,35 @@
-/*  your css code here. If applicable */
+.star {
+	position: relative;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid yellow;
+
+}
+
+.star:after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 70px solid yellow;
+  transform: rotate(30deg); /* Added missing semicolon */
+}
+
+.star:before {
+  content: ''; /* Fixed typo: 'conent' to 'content' */
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 70px solid yellow;
+  transform: rotate(-30deg); /* Added missing semicolon */
+}
